@@ -1,0 +1,254 @@
+@font-face {
+    font-family: product;
+    src: url(img/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: productb;
+    src: url(img/Product\ Sans\ Bold.ttf);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: product;
+}
+ nav{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    color: white;
+    position: fixed;
+    z-index: 99;
+ }
+ nav ul{
+    display: flex;
+    list-style: none;
+ }
+ nav ul li{
+    padding: 10px;
+    font-size: 2.5vh;
+ }
+ nav h1{
+    font: 3vh;
+ }
+ nav i{
+    font-size: 4vh;
+ }
+.one{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg,rgb(240, 176, 2), rgb(243, 94, 1) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.fanta{
+    width: 40%;
+    z-index: 1; 
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.slice{
+    position: absolute;
+    width: 13%;
+    top: 8%;
+    left: 34%;
+    z-index: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.orange{
+    position: absolute;
+    width: 23%;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.tfanta{
+    position: absolute;
+    color: white;
+    font-size: 30vw;
+    font-family: productb;
+    -webkit-text-stroke: 4px;
+    -webkit-text-fill-color: transparent;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.leaf2{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transform: rotate(120deg) scale(120%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.leaf1{
+    position: absolute;
+    width: 10%;
+    left: 80%;
+    top: 70%;
+    transform: rotate(180deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.leaf3{
+    position: absolute;
+    width: 23%;
+    top: 10%;
+    right: 0%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.tleft{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(46, 5, 53);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.tright{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(46, 5, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: white;
+
+}
+.tleft svg{
+    width: 80%;
+    transform: rotateX(60deg);
+}
+.tright h1{
+    text-align: start;
+    font-size: 4vw;
+}
+.tright p {
+ padding-right: 9vw;
+ font-size: 1.3vw;
+}
+.three{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+.cards{
+    height: 70%;
+    width: 25%;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-top: 7vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.cards button{
+    width: 7vw;
+    height: 6vh;
+    margin-bottom: 3vh;
+    border-radius: 50px;
+    background-color: rgb(254, 95, 37);
+}
+.cards h1{
+    margin-bottom: 3vh;
+    position: relative;
+}
+.cards img{
+    position: absolute;
+    width: 140%; 
+    top: -10%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.pepsi{
+position: absolute;
+transform: scale(55%) translateY(-45%) rotate(60deg);
+opacity: 0.2;
+z-index: 3  ;
+transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+
+.splash{
+    position: absolute;
+    z-index: -1;
+    transform: scale(50%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.cocacola{
+    transform: rotate(-60deg);
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.four{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg,rgb(2, 169, 240), rgb(20, 19, 95) 70%);
+    overflow: hidden;
+    z-index: 1; 
+}
+.content{
+    width: 50%;
+    height: 100%;
+    float: right;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con{
+    width: 100%;
+    overflow: hidden;
+}
+.con h1{
+    font-size: 6vw;
+    margin: 0vw 2vw;
+
+}
+.con p{
+    margin: 0vw 2vw;
+    font-size: 1.3vw;
+}
+.cube1, .cube2, .cube3{
+    position: absolute;
+    scale: 0.4;
+    opacity: 0;
+    z-index: 2;
+}
+
+.five{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(150deg,rgb(241, 114, 30), rgb(132, 52, 18) 70%);
+    overflow: hidden;
+    z-index: 1; 
+}
+
+
+
